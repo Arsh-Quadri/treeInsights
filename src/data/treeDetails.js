@@ -9,9 +9,36 @@ const treeDetails = [
     environment:
       "Banyan trees thrive in tropical and subtropical climates, preferring well-drained soil and full sunlight.",
     image: "https://cdn.hswstatic.com/gif/banyan-tree.jpg",
+    type: "Tree",
   },
   {
     id: 2,
+    name: "Noni",
+    scientificName: "Morinda citrifolia Linn.",
+    description:
+      "Noni is a shrub known for its medicinal properties and is also called Indian mulberry or Cheese fruit. It belongs to the Rubiaceae family.",
+    uses: "Noni is used in Ayurvedic medicine for its sweet and sour taste. It is known to be heavy and oily in nature, with a cooling potency. Noni is beneficial in various health conditions such as diabetes (prameha) and skin diseases (kusthaghna).",
+    environment: "",
+    image:
+      "https://m.media-amazon.com/images/I/61ezOkGMgsL._AC_UF1000,1000_QL80_.jpg",
+    type: "Plant",
+    vernacularNames: {
+      English: "Indian mulberry, Cheese fruit",
+      Sanskrit: "Ach",
+      Hindi: "Ach",
+      Bengali: "Ach",
+      Marathi: "Ach",
+      Gujarati: "Ach",
+      Kannada: "Ach",
+      Malayalam: "Ach",
+      Tamil: "Ach",
+      Telugu: "Ach",
+    },
+    wikipediaLink: "https://en.wikipedia.org/wiki/Morinda_citrifolia",
+    sanskritPhrases: [],
+  },
+  {
+    id: 3,
     name: "Neem Tree",
     scientificName: "Azadirachta indica",
     description:
@@ -21,9 +48,10 @@ const treeDetails = [
       "Neem trees grow well in tropical and subtropical regions with well-drained soil. They are drought-resistant and can tolerate high temperatures.",
     image:
       "https://i.pinimg.com/originals/c2/71/e2/c271e24b437c72da12e1879283f9389a.jpg",
+    type: "Tree",
   },
   {
-    id: 3,
+    id: 4,
     name: "Mango Tree",
     scientificName: "Mangifera indica",
     description:
@@ -33,9 +61,40 @@ const treeDetails = [
       "Mango trees prefer tropical and subtropical climates with well-drained soil. They require full sun and protection from frost.",
     image:
       "https://nurserylive.com/cdn/shop/products/nurserylive-mango-tree-kesar-grafted-plant.jpg?v=1634223741",
+    type: "Tree",
   },
   {
-    id: 4,
+    id: 5,
+    name: "Tulsi",
+    scientificName: "Ocimum sanctum Linn.",
+    description:
+      "Tulsi is a perennial herb known for its aromatic smell and medicinal properties. It is widely grown in villages and revered for its spiritual significance.",
+    uses: "Used in Ayurvedic medicine for its diverse therapeutic properties including antiasthmatic, antirheumatic, antibacterial, antifungal, antiviral, and anti-inflammatory actions. It is also beneficial in respiratory disorders, fever, skin diseases, and digestive problems.",
+    environment: "Found throughout India.",
+    image:
+      "https://qph.cf2.quoracdn.net/main-qimg-09bfd4443a43a9e4de84c90b3323d6c0",
+    type: "Plant",
+    vernacularNames: {
+      Hindi: "Tulsi",
+      English: "Holy basil",
+      Sanskrit: "Tulasi",
+      Gujarati: "Tulsi",
+      Malayalam: "Tulasi",
+      Bengali: "Tulasi",
+      Marathi: "Tulasi",
+      Kannada: "Tulasi",
+      Tamil: "Tulasi",
+      Telugu: "Tulasi",
+    },
+    wikipediaLink: "https://en.wikipedia.org/wiki/Ocimum_tenuiflorum",
+    sanskritPhrases: [
+      "तुलस्या ग्राम्या सुलभा बहुमञ्जीरि देवदन्तभुभः।",
+      "सुरसा सुलभा अपेतिषक्ष्मभसा च तुलसी।",
+      "वार्धकन्याच्च कन्याघतिष्ठातत्वेत्यवन्ति ।",
+    ],
+  },
+  {
+    id: 6,
     name: "Peepal Tree",
     scientificName: "Ficus religiosa",
     description:
@@ -44,9 +103,10 @@ const treeDetails = [
     environment:
       "Peepal trees thrive in tropical and subtropical climates. They prefer well-drained soil and full sun but can tolerate partial shade.",
     image: "https://boota.pk/wp-content/uploads/2021/01/Peepal-Tree.jpg",
+    type: "Tree",
   },
   {
-    id: 5,
+    id: 7,
     name: "Ashoka Tree",
     scientificName: "Saraca asoca",
     description:
@@ -56,9 +116,10 @@ const treeDetails = [
       "Ashoka trees grow well in tropical and subtropical climates. They prefer moist, well-drained soil and partial to full sunlight.",
     image:
       "https://m.media-amazon.com/images/I/91Ek2hlBNZL.AC_UF1000,1000_QL80.jpg",
+    type: "Tree",
   },
   {
-    id: 6,
+    id: 8,
     name: "Gulmohar Tree",
     scientificName: "Delonix regia",
     description:
@@ -68,9 +129,10 @@ const treeDetails = [
       "Gulmohar trees thrive in tropical and subtropical climates. They prefer well-drained soil and full sun.",
     image:
       "https://growbilliontrees.com/cdn/shop/articles/Gen-Gar-3.png?v=1703231450&width=1100",
+    type: "Tree",
   },
   {
-    id: 7,
+    id: 9,
     name: "Sandalwood Tree",
     scientificName: "Santalum album",
     description:
@@ -80,9 +142,10 @@ const treeDetails = [
       "Sandalwood trees grow well in tropical and subtropical climates. They prefer well-drained soil and partial to full sunlight.",
     image:
       "https://m.media-amazon.com/images/I/81sU022LyWS.AC_UF1000,1000_QL80.jpg",
+    type: "Tree",
   },
   {
-    id: 8,
+    id: 10,
     name: "Sal Tree",
     scientificName: "Shorea robusta",
     description:
@@ -92,9 +155,10 @@ const treeDetails = [
       "Sal trees thrive in tropical and subtropical climates. They prefer well-drained soil and full sun but can tolerate partial shade.",
     image:
       "https://www.rachnakar.com/wp-content/uploads/2021/01/IMG_20201115_120731-scaled.jpg",
+    type: "Tree",
   },
   {
-    id: 9,
+    id: 11,
     name: "Teak Tree",
     scientificName: "Tectona grandis",
     description:
@@ -104,9 +168,10 @@ const treeDetails = [
       "Teak trees grow well in tropical and subtropical climates. They prefer well-drained soil and full sun.",
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5W9151jparSxLEqGUVRW7DYNcqV4vVMlLBg&s",
+    type: "Tree",
   },
   {
-    id: 10,
+    id: 12,
     name: "Jamun Tree",
     scientificName: "Syzygium cumini",
     description:
@@ -115,6 +180,65 @@ const treeDetails = [
     environment:
       "Jamun trees thrive in tropical and subtropical climates. They prefer well-drained soil and full sun but can tolerate partial shade.",
     image: "https://i.ytimg.com/vi/AcyVXchpFJM/maxresdefault.jpg",
+    type: "Tree",
+  },
+  {
+    id: 13,
+    name: "Aloe vera",
+    scientificName: "Aloe vera",
+    description:
+      "Aloe vera is a perennial dwarf meshy-leaved plant belonging to the family Liliaceae. It is known for its ability to survive with little water and has a cooling effect.",
+    uses: "Traditionally used in Ayurvedic medicine for its cooling, rejuvenative, and medicinal properties. It is beneficial in conditions such as jaundice, spleenomegaly, wounds, inflammation, and various skin disorders.",
+    environment: "Found all over India.",
+    image:
+      "https://www.almanac.com/sites/default/files/users/Almanac%20Staff/aloe-vera-cgdeaw_ss_full_width.jpg",
+    type: "Plant",
+    vernacularNames: {
+      Hindi: "Kumari",
+      English: "Aloe vera",
+      Sanskrit: "Kumari",
+      Gujarati: "Kumari",
+      Malayalam: "Kattarvazha",
+      Bengali: "Kumari",
+      Marathi: "Korpad",
+      Kannada: "Kumari",
+      Tamil: "Kumari",
+      Telugu: "Kalabanda",
+    },
+    wikipediaLink: "https://en.wikipedia.org/wiki/Aloe_vera",
+    sanskritPhrases: [
+      "कुमारयति क्रीडिते स्वल्पेन अपि जलेन शीतत्वादि रसना - कुमारीः क्रीडायाम्।",
+      "स्थूलदला - स्थूलदल यस्था सा।",
+      "द्रुतकुमारी - घृत्सूक्ता कुमारी इति।",
+      "तवपुलस्रवा - तवपुलं बहुस्रावं अस्त्यस्याः।",
+      "कन्या - कन्याति कन्यावा रसायनत्वातिगुणाः।",
+      "गृहकन्या - गृहे कन्या इव, माधुर्यात् तद्गुणयुक्तात्वात्।",
+    ],
+  },
+  {
+    id: 14,
+    name: "Kapitha",
+    scientificName: "Feronia limonia",
+    description:
+      "Kapitha, also known as Wood Apple or Elephant Apple, is a deciduous tree native to the Indian subcontinent. It belongs to the family Rutaceae.",
+    uses: "The fruit of Kapitha is used in Ayurvedic medicine for its digestive properties, treating diarrhea, dysentery, and promoting overall gastrointestinal health.",
+    environment:
+      "Kapitha trees are found in dry and rocky regions across India, often near villages and in cultivated orchards.",
+    image:
+      "https://www.jiomart.com/images/product/original/rvofkzpk3d/online-plant-bazar-brown-wood-apple-fruit-thai-variety-grafted-live-plant-product-images-orvofkzpk3d-p603983595-2-202308200013.jpg?im=Resize=(1000,1000)",
+    type: "Tree",
+    vernacularNames: {
+      Hindi: "कपित्थ",
+      English: "Wood Apple",
+      Gujarati: "કાઠબેલ",
+      Sanskrit: "कपित्थ",
+    },
+    wikipediaLink: "https://en.wikipedia.org/wiki/Feronia_limonia",
+    sanskritPhrases: [
+      "कृष्णांबु क्रियां क्रियाम् - भावप्रकाश",
+      "कृष्णांबु क्रियां क्रियाम् - सुश्रुत",
+      "कृष्णांबु क्रियां क्रियाम् - वाग्भट",
+    ],
   },
 ];
 
