@@ -12,7 +12,7 @@ const TreeDetails = () => {
         alt="background"
         className="w-full object-cover h-screen absolute -z-10"
       />
-      <div className="max-w-5xl mx-auto shadow-lg h-[90vh] z-10 bg-white opacity-80">
+      <div className="max-w-5xl mx-auto shadow-lg h-[92vh] z-10 bg-white opacity-80">
         <div className="flex p-10 gap-5 w-full justify-center items-start ">
           <div className="w-[50%] p-2">
             <img
