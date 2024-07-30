@@ -1,13 +1,13 @@
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import treeDetails from "../data/treeDetails";
+// import treeDetails from "../data/treeDetails";
 
-const Home = () => {
+const Home = ({ treeDetails }) => {
   const navigate = useNavigate();
   const maxLength = 75; // Max length for truncated description
   const initialVisibleTrees = 6; // Initial number of trees to display
   const [showAll, setShowAll] = useState(false);
-
   // Function to truncate description
   const truncateDescription = (description, maxLength) => {
     if (description.length <= maxLength) return description;
@@ -34,12 +34,12 @@ const Home = () => {
         }}
       >
         <div className="absolute inset-0 flex items-center justify-center ">
-          <div className="card text-center p-6 bg-green-900 hover:bg-opacity-30 bg-opacity-15 backdrop-blur-md rounded-lg w-[50vw] h-[30vh] shine-overlay">
+          <div className="card text-center p-6 bg-green-900 hover:bg-opacity-30 bg-opacity-15 backdrop-blur-md rounded-lg w-[90vw] md:w-[50vw] h-fit shine-overlay">
             <div className="absolute inset-0 shine"></div>
-            <h2 className="relative z-10 text-4xl font-bold text-white">
+            <h2 className="relative z-10 text-2xl md:text-4xl font-bold text-white">
               Welcome to Our Tree Insights
             </h2>
-            <p className="relative z-10 text-2xl font-medium text-white mt-5">
+            <p className="relative z-10 text-base md:text-2xl font-medium text-white mt-5">
               A Green Haven with 10,719 Tall Trees and 100,000 Flourishing
               Plants
             </p>
@@ -53,7 +53,7 @@ const Home = () => {
           <div
             key={1}
             className="shadow-md text-gray-900 rounded-lg hover:shadow-[0_0px_20px_0px_rgba(0,0,0,0.3)] flex flex-col gap-2 cursor-pointer w-full h-[8rem] relative overflow-hidden group"
-            // onClick={() => navigate(`/tree/${tree.id}`)}
+            onClick={() => navigate(`/categories/trees`)}
           >
             <img
               src="https://nt.global.ssl.fastly.net/binaries/content/gallery/website/national/regions/worcestershire-herefordshire/places/clent-hills/library/autumn/beech-tree-clent-hills-worcestershire-1591489.jpg"
@@ -67,7 +67,7 @@ const Home = () => {
           <div
             key={2}
             className="shadow-md text-gray-900 rounded-lg hover:shadow-[0_0px_20px_0px_rgba(0,0,0,0.3)] flex flex-col gap-2 cursor-pointer w-full h-[8rem] relative overflow-hidden group"
-            // onClick={() => navigate(`/tree/${tree.id}`)}
+            onClick={() => navigate(`/categories/shrubs`)}
           >
             <img
               src="https://www.loveyourlandscape.org/media/20179/landscaped-lawn-000016479307_large.jpg"
@@ -81,7 +81,7 @@ const Home = () => {
           <div
             key={3}
             className="shadow-md text-gray-900 rounded-lg hover:shadow-[0_0px_20px_0px_rgba(0,0,0,0.3)] flex flex-col gap-2 cursor-pointer w-full h-[8rem] relative overflow-hidden group"
-            // onClick={() => navigate(`/tree/${tree.id}`)}
+            onClick={() => navigate(`/categories/herbs`)}
           >
             <img
               src="https://grocycle.com/wp-content/uploads/2021/07/growing-herbs-for-profit-cover-pic.jpg"
@@ -95,7 +95,7 @@ const Home = () => {
           <div
             key={4}
             className="shadow-md text-gray-900 rounded-lg hover:shadow-[0_0px_20px_0px_rgba(0,0,0,0.3)] flex flex-col gap-2 cursor-pointer w-full h-[8rem] relative overflow-hidden group"
-            // onClick={() => navigate(`/tree/${tree.id}`)}
+            onClick={() => navigate(`/categories/climber`)}
           >
             <img
               src="https://www.thompson-morgan.com/static-images/tandm/static-articles/top-10-climbing-plants/20220622_tm_clematis_montana_mayleen.jpg"
