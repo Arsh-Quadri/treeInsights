@@ -79,10 +79,10 @@ const Navbar = ({ user }) => {
           >
             Climber <div className="line  h-[2px] bg-green-700 "></div>
           </div>
+          <Link to="/add-tree" className="hoverable-element">
+            Add Your Tree <div className="line  h-[2px] bg-green-700 "></div>
+          </Link>
           {/* <div className="hoverable-element">
-            Creepers <div className="line  h-[2px] bg-green-700 "></div>
-          </div>
-          <div className="hoverable-element">
             Contact <div className="line  h-[2px] bg-green-700 "></div>
           </div> */}
         </div>

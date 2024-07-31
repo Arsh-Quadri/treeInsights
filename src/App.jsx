@@ -8,6 +8,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup"; // Import Signup component
 import { useEffect, useState } from "react";
 import Category from "./components/Category";
+import TreeForm from "./components/TreeForm";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -55,6 +56,7 @@ const App = () => {
               path="/categories/:cat"
               element={<Category treeDetails={treeDetails} />}
             />
+            <Route path="/add-tree" element={<TreeForm />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
           </Routes>
