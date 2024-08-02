@@ -21,6 +21,14 @@ const Navbar = ({ user }) => {
     return "User";
   };
 
+  const handleAddTree = () => {
+    if (user) {
+      navigate("/add-tree");
+    } else {
+      navigate("/login");
+    }
+  };
+
   return (
     <nav className="w-full shadow-md font-medium">
       <div className="upper bg-green-800 flex justify-end gap-6 text-white text-[12px] md:text-[15px] pr-6 py-[0.4rem] md:py-[0.6rem]">
@@ -79,9 +87,9 @@ const Navbar = ({ user }) => {
           >
             Climber <div className="line  h-[2px] bg-green-700 "></div>
           </div>
-          <Link to="/add-tree" className="hoverable-element">
+          <button onClick={handleAddTree} className="hoverable-element">
             Add Your Tree <div className="line  h-[2px] bg-green-700 "></div>
-          </Link>
+          </button>
           {/* <div className="hoverable-element">
             Contact <div className="line  h-[2px] bg-green-700 "></div>
           </div> */}
