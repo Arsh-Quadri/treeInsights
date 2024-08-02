@@ -86,9 +86,11 @@ const Navbar = ({ user }) => {
             Contact <div className="line  h-[2px] bg-green-700 "></div>
           </div> */}
         </div>
-        <div className="touchBtn text-sm md:text-lg font-[500] text-slate-900 bg-green-200 px-3 py-1 md:py-2 rounded-full cursor-pointer hover:bg-green-300">
-          Get in touch
-        </div>
+        <a href="mailto:arshquadri111@gmail.com">
+          <div className="touchBtn text-sm md:text-lg font-[500] text-slate-900 bg-green-200 px-3 py-1 md:py-2 rounded-full cursor-pointer hover:bg-green-300">
+            Get in touch
+          </div>
+        </a>
       </div>
     </nav>
   );

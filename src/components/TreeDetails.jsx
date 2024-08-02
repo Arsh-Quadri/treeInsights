@@ -12,9 +12,9 @@ const TreeDetails = ({ treeDetails }) => {
       <img
         src={tree.image}
         alt="background"
-        className="w-full object-cover h-screen absolute -z-10"
+        className="w-full object-cover h-full absolute -z-10"
       />
-      <div className="max-w-5xl mx-auto shadow-lg h-[92vh] z-10 bg-white opacity-80">
+      <div className="max-w-5xl mx-auto shadow-lg h-screen z-10 bg-white opacity-80 pb-3">
         <div className="flex p-10 gap-5 w-full justify-center items-start ">
           <div className="w-[40%] p-2">
             <img
@@ -54,7 +54,7 @@ const TreeDetails = ({ treeDetails }) => {
             {/* Add more details as needed */}
           </div>
         </div>
-        <div className="flex justify-center bottom-0 mt-5 mb-4">
+        <div className="flex justify-center bottom-0 mt-5">
           <Link
             to={tree.wikipediaLink}
             target="_blank"
